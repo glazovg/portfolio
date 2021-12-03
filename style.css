@@ -9,6 +9,7 @@ body {
 
 header {
     display: flex;
+    flex-direction: row;
     background-image: linear-gradient(rgba(0, 0, 0, 0.986), rgba(0, 0, 0, 0.705)),
         url("https://www.gqrgm.com/wp-content/uploads/2019/09/2.-Blog-Banner-Template.jpg");
     background-size: cover;
@@ -17,7 +18,7 @@ header {
 
 a {
     color: rgba(255, 255, 255, 0.473);
-    font-size: 20px;
+    font-size: 30px;
     margin: 10px;
 }
 
@@ -26,19 +27,25 @@ a {
     color: rgba(255, 255, 255, 0.945);
     padding: 25px;
     font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .navigation-bar {
-    display: inline-block;
-    right: 20px;
-    top: 10px;
-    position: absolute;
+    margin-left: auto;
 }
 
 section {
-    display: inline-flex;
+    display: flex;
     padding: 50px;
-    justify-content: space-between;
+    flex-direction: row;
+    margin: 5px;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .section-title {
@@ -57,7 +64,6 @@ section {
 }
 
 .projects {
-    padding: 0;
     margin: 0;
     list-style: none;
     display: flex;
@@ -95,18 +101,9 @@ section {
 }
 
 /*ID Elements*/
-#project-1 {
+#project-1, #project-2, #project-3 {
     display: flex;
     align-items: flex-end;
-    justify-content: left;
-    filter: blur(3px);
-    margin: 1rem;
-}
-
-#project-2, #project-3 {
-    display: flex;
-    align-items: flex-end;
-    justify-content: left;
     filter: blur(3px);
     margin: 1rem;
 }
@@ -138,4 +135,8 @@ section {
         max-width: 100rem;
         max-height: 20rem;
     }
-  }
+
+    .header-section {
+        font-size: 50px;
+    }
+}
