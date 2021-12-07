@@ -5,94 +5,86 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible"
               content="IE=edge">
-        <meta name="viewport"
-              content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
         <link rel="stylesheet"
-              type="text/css"
-              href="./style.css" />
-        <title>Guillermo's Porfolio</title>
+              href="style.css">
     </head>
 
     <body>
-        <header>
-            <div class="logo">
-                <img src="./img/logo.png"
-                     alt="Guillermo Lazo"
-                     width="250"
-                     height="250">
-            </div>
-            <div class="header-section">
-                <h1>Guillermo Lazo</h1>
-            </div>
+        <header id="header">
+            <img src="./img/logo.png"
+                 alt="Guillermo Lazo"
+                 width="250"
+                 height="250" />
+            <h1>Guillermo Lazo</h1>
             <nav class="navigation-bar">
-                <a href="#about-me">About Me</a>
-                <a href="#work">Work</a>
-                <a href="#contact-me">Contact Me</a>
-                <a href="#resume">Resume</a>
+                <a class="menu-item"
+                   href="#about-me">About Me</a>
+                <a class="menu-item"
+                   href="#work">Work</a>
+                <a class="menu-item"
+                   href="#contact-me">Contact Me</a>
+                <a class="menu-item"
+                   href="#resume">Resume</a> <!-- COMING SOON -->
             </nav>
         </header>
+
         <main>
             <div class="section-container">
                 <section id=about-me>
-                    <div class="section-title">
-                        <h2>About Me</h2>
-                    </div>
-                    <div class="section-content">
-                        <p>I am a QA Test Engineer located in Mexico City with experince in different testing tools as
-                            Selenium IDE, Webdriver, WebdriverIO, TestCafe, Cypress, Mocha, Chai, Postman, Jmeter and
-                            Java/Java Script as programing lenguages. Always trying to be up to date with the last
-                            testing
-                            trendings. Fan of soccer, MMA and Video Games.
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-content">I am a QA Test Engineer located in Mexico City with experince in
+                        different testing tools as
+                        Selenium IDE, Webdriver, WebdriverIO, TestCafe, Cypress, Mocha, Chai, Postman, Jmeter and
+                        Java/Java Script as programing lenguages. Always trying to be up to date with the last
+                        testing
+                        trendings. Fan of soccer, MMA and Video Games.
 
-                            Interested in increasing my coding skills and decided to take a Fullstack path just as hobby
-                            and
-                            maybe one day make the transition.
-                        </p>
-                    </div>
+                        Interested in increasing my coding skills and decided to take a Fullstack path just as hobby
+                        and
+                        maybe one day make the transition.
+                    </p>
                 </section>
                 <section id=work>
-                    <div class="section-title">
-                        <h2>Work</h2>
-                    </div>
+                    <h2 class="section-title">Work</h2>
                     <div class="section-content">
+                        <div id="project-1">
+                            <img src="./img/horiseon_first_hw.png"
+                                 alt="Project 1 Horieson refactoring" />
+                            <div class="middle">
+                                <a class="label"
+                                   href="https://glazovg.github.io/horiseon-app-hw/"
+                                   target="_blank">View Project</a>
+                            </div>
+                        </div>
                         <ul class="projects">
-                            <li>
-                                <div id="project-1">
-                                    <a class="label"
-                                       href="https://glazovg.github.io/horiseon-app-hw/"
-                                       target="_blank">View Project</a>
-                                    <div class="img-container"
-                                         style="background-image:url(./img/horiseon_first_hw.png);">
+                            <div id="project-2">
+                                <div>
+                                    <img src="https://miro.medium.com/max/1400/1*ut6YmRIMX-hLkwsSUHz8yg.png"
+                                         alt="Project 2 Test Cafe Framework GitHub Repository" />
+                                    <div class="middle">
+                                        <a class="label"
+                                           href="https://github.com/glazovg/testcafe-framework"
+                                           target="_blank">View Project</a>
                                     </div>
                                 </div>
-                            </li>
-                            <li>
-                                <div id="project-2">
-                                    <a class="label"
-                                       href="https://github.com/glazovg/testcafe-framework"
-                                       target="_blank">View Project</a>
-                                    <div class="img-container"
-                                         style="background-image:url(https://www.blogduwebdesign.com/wp-content/uploads/2019/02/cover-100.jpg);">
+                            </div>
+                            <div id="project-3">
+                                <div>
+                                    <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--co5LdVu9--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://i2.wp.com/grantnorwood.com/app/uploads/2017/07/webdriver-io-logo.png%3Fw%3D1680%26ssl%3D1"
+                                         alt="Project 3 WebdriverIO Framework GitHub Repository" />
+                                    <div class="middle">
+                                        <a class="label"
+                                           href="https://github.com/glazovg/b-challenge"
+                                           target="_blank">View Project</a>
                                     </div>
                                 </div>
-                            </li>
-                            <li>
-                                <div id="project-3">
-                                    <a class="label"
-                                       href="https://github.com/glazovg/b-challenge"
-                                       target="_blank">View Project</a>
-                                    <div class="img-container"
-                                         style="background-image:url(https://res.cloudinary.com/practicaldev/image/fetch/s--co5LdVu9--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://i2.wp.com/grantnorwood.com/app/uploads/2017/07/webdriver-io-logo.png%3Fw%3D1680%26ssl%3D1);">
-                                    </div>
-                                </div>
-                            </li>
+                            </div>
                         </ul>
                     </div>
                 </section>
                 <section id=contact-me>
-                    <div class="section-title">
-                        <h2>Contact Me</h2>
-                    </div>
+                    <h2 class="section-title">Contact Me</h2>
                     <div class="section-content">
                         <div class="contact-info">
                             <div>
@@ -109,9 +101,7 @@
                     </div>
                 </section>
             </div>
-
         </main>
-
     </body>
 
 </html>
